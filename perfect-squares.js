@@ -6,7 +6,6 @@ function findNextSquare(sq) {
       //Math.pow takes n and multiplies it with itself, can be used to do sqrt as well
       // by replacing 2 with 0.5
       n = Math.pow(n + 1, 2);
-      console.log(n);
       return n;
     }
    }
