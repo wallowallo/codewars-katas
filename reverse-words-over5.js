@@ -1,3 +1,4 @@
+//inputs a single string or a sentance and returns the words over 5 letter reversed.
 function spinWords(s){
   let words = s.split(' ');
   let array = [];
