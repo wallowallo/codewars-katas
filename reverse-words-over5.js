@@ -17,3 +17,10 @@ function spinWords(s){
 spinWords("hello there mate");
 spinWords("helloa");
 spinWords("hey fancy to meet you here");
+
+// other code warriors bestpractice
+function spinWords(words){
+  return words.split(' ').map(function (word) {
+    return (word.length > 4) ? word.split('').reverse().join('') : word;
+  }).join(' ');
+}
