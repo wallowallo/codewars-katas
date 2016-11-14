@@ -1,4 +1,4 @@
-//task instructions :
+// Task instructions :
 // This kata is to practice simple string output. Jamie is a programmer, and girlfriend of James. She likes diamonds,
 // and this time she expects String of diamond from James. As James doesn't know how to do it, he needs your help.
 // Task:
@@ -18,9 +18,11 @@
 //
 // JS Note
 //
-// JS students, like Python ones, must implement the diamond(n) method, and return null for invalid input.
+// JS students must implement the diamond(n) method, and return null for invalid input.
 
 function diamond(n){
-
+  if(n % 2 === 0 || Math.sign(n) === -1) {
+    return null;
+  }
   return diam;
 }
