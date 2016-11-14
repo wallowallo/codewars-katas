@@ -24,5 +24,10 @@ function diamond(n){
   if(n % 2 === 0 || Math.sign(n) === -1) {
     return null;
   }
-  return diam;
+  let diamonds = '*';
+  do {
+    console.log(n);
+    n -= 2;
+  } while(n > 0)
 }
+diamond(5);
