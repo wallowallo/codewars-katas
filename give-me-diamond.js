@@ -6,8 +6,10 @@ function diamond(n){
   const diamonds = '******************************************************************************';
   do {
     array.push(diamonds.split('', n).join(''));
+    let reverse = array.reverse();
+
     n -= 2;
   } while(n > 0);
-  return console.log(array.reverse().join('\n') + '\n' + array.reverse().splice(1,20).join('\n'));
+  let merp = array.reverse().join('\n') + '\n' + array.reverse().splice(1,20).join('\n')
 }
 diamond(5);
