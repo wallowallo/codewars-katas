@@ -1,8 +1,8 @@
 function maxSequence(arr) {
   let checkArray = [];
-  let map = arr.map(a => a < 0 ? checkArray.push(a) : 0)
+  let map = arr.map((a, b) => a < 0 ? checkArray.push(a) : 0)
   if(arr.length === 0 || arr.length == checkArray.length) { 
-    return console.log('zero', 0); //should return null if array is empty or only negative variables
+    return console.log('zero', 0);
   }
   return console.log(arr.reduce((a, b) =>  a+b, 0));
   //needs other logic to add them together.
