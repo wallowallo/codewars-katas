@@ -3,7 +3,7 @@ function maxSequence(arr) {
   let map = arr.map((a, b) => a < 0 ? checkArray.push(a) : 0)
   let maxCallback = (max, cur) => Math.max(max, cur);
   if(arr.length === 0 || arr.length == checkArray.length) { 
-    return console.log('zero', 0);
+    return 0;
   }
   return console.log(arr.map().reduce(maxCallback);
   //return console.log(arr.reduce((a, b) =>  a+b, 0));
