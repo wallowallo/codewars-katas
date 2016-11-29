@@ -6,9 +6,8 @@ function maxSequence(arr) {
     return 0;
   }
   return console.log(arr.map().reduce(maxCallback);
-  //return console.log(arr.reduce((a, b) =>  a+b, 0));
+  //iterate over the array and slice it up into multiple sub arrays, add them together. Push them to an array then use math.max to decide the greatest sub array value.    
   //use Math.max(...Array)
-  //needs other logic to add them together.
 }
 maxSequence([1, 2, 3, 4, -5, 6, 7])
 maxSequence([]);
