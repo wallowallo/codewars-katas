@@ -10,7 +10,7 @@ function maxSequence(arr) {
     .reduce((a,b) => a+b));
   });
   return console.log(newArray.reduce((max, cur) => Math.max(max,cur)));
-  //iterate over the array and slice it up into multiple sub arrays, add them together. Push them to an array then use math.max to decide the greatest sub array value.    
+  // find a way to iterate and slice unique subarrays to cover all possibilities in an array
 }
 maxSequence([1, 2, 3, 4, -5, 6, 7])
 maxSequence([]);
