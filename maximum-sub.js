@@ -15,12 +15,14 @@ array.forEach(function(element, index) {
   array.forEach(grabSubArrays(index, array.length - index));
 });
 
+
+
 let filteredSubArrays = subArrays.filter(val => val.length > 0);
 
 let result = filteredSubArrays.reduce((oldValue, newValue) => { 
   let currentValue = newValue.reduce((a,b) => a+b);
   return currentValue > oldValue ? currentValue : oldValue;
 });
-console.log(result);
+//console.log(result);
 //let sum = array.reduce((oldValue, newValue) =>  oldValue + newValue );
 //console.log(sum);
