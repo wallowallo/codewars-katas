@@ -9,6 +9,10 @@ function maxSequence(arr) {
     newArray.push(arr.slice(index)
     .reduce((a,b) => a+b));
   });
+  arr.reverse().forEach((element,index) => {
+    newArray.push(arr.slice(index)
+    .reduce((a,b) => a+b));
+  });
   return console.log(newArray.reduce((max, cur) => Math.max(max,cur)));
   // find a way to iterate and slice unique subarrays to cover all possibilities in an array
 }
