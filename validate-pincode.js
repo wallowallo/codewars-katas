@@ -10,3 +10,8 @@ validatePIN('-1234');
 validatePIN('123aa');
 validatePIN('ab2345');
 validatePIN('123456')
+
+//other codewarriors best practice/clever
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/.test(pin)
+}
