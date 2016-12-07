@@ -11,4 +11,4 @@ function findMissingNumber(seq){
 findMissingNumber('1 7 3 4 5');
 //should return 2
 findMissingNumber('2 1 3 4');
-//should return 4
+//should return 1
