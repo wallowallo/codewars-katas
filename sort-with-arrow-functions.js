@@ -9,3 +9,8 @@ var OrderPeople = function(people){
     return 0;
   });
 }
+
+//other codewarriors best practice/clever
+var OrderPeople = function(people){
+  return people.sort((a,b) => a.age - b.age );
+}
