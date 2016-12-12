@@ -3,7 +3,7 @@ function evaporator(content, evap_per_day, threshold){
   let renderedUseless = content / threshold;
  //create while loop to increase days and divide the content with the evap_per_day until it hits the threshold
   while(content > renderedUseless) {
-    let subtract = 1;
+    let subtract = content / evap_per_day;
     content -= subtract;
     days++;
     console.log(content);
