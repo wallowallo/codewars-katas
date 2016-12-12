@@ -6,6 +6,7 @@ var OrderPeople = function(people){
     else if(a.age < b.age) {
       return -1;
     }
+    //when a is equal to b
     return 0;
   });
 }
