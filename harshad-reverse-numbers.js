@@ -4,9 +4,10 @@ function numberJoy(n) {
   //if that integer is the added number reversed then let it equal to true else set it to false
   let addInput = (''+n).split('').map(a => parseInt(a)).reduce((a,b) => a+b);
   let harshadNumber = n / addInput;
+  let reversed = ('' + harshadNumber).split('').reverse().join('');
   console.log(harshadNumber);
-  if(harshadNumber === parseInt(harshadNumber, 10)) {
-    return console.log('true');
+  if(addInput === parseInt(reversed, 10)) {
+    return console.log(reversed, 'true');
   }
   return console.log('false');
 }
