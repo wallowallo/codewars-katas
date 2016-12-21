@@ -15,3 +15,10 @@ numberJoy(213);
 numberJoy(1);
 numberJoy(81);
 numberJoy(1458);
+
+//best practice/clever from other codewarriors
+function numberJoy(n) {
+  var s = n.toString().split('').reduce((s,v) => s + +v, 0);
+  var sr = +s.toString().split('').reverse().join('');
+  return s * sr == n;
+}
